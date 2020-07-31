@@ -1,0 +1,1 @@
+# glossary-shooping-cart
