@@ -1,1 +1,79 @@
-
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>madlibs</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <h1><img style="margin-left: 35px" src="https://icons-for-free.com/iconfiles/png/512/ecommerce+finance+logo+icon-1320186338993491614.png" alt="ebay logo" height="150px"></h1>
+            </div>
+        </header>
+        <div>
+            <h5 style="margin-left: 40px">YOUR SHOPPING CARD</h5>
+        </div>
+        <section class="container">
+            <div class="tbl-div">
+                <table class="tbl">
+                    <tr class="tbl-header">
+                        <th>ITEM</th>
+                        <th>DESCRIPTION</th>
+                        <th class="th-number">[+/-]</th>
+                        <th>PRICE</th>
+                        <th>REMOVE</th>
+                    </tr>
+                    <tr id="item-row" class="tbl-row">
+                        <td class="td-img"><img src="https://i.ebayimg.com/thumbs/images/g/cGUAAOSwTxpb0x1v/s-l225.webp" alt="img"></td>
+                        <td>LENOVO IDEAPAD</td>
+                        <td class="td-input"><input type="number" value="0"></td>
+                        <td class="price-row">$255.99</td>
+                        <td id="cancel" class="rmv-cross"><button class="rmv-btn btn btn-dark">&#10060</button></td>
+                    </tr>
+                    <tr id="item-row" class="tbl-row">
+                        <td class="td-img"><img src="https://i.ebayimg.com/thumbs/images/g/rhEAAOSwP3Jb0x2Q/s-l225.webp" alt="img"></td>
+                        <td>PARROT CAMERA DRONE</td>
+                        <td class="td-input"><input type="number" value="0"></td>
+                        <td class="price-row">$299.99</td>
+                        <td id="cancel" class="rmv-cross"><button class="rmv-btn btn btn-dark">&#10060</button></td>
+                    </tr>
+                                        <tr id="item-row" class="tbl-row">
+                        <td class="td-img"><img src="https://i.ebayimg.com/thumbs/images/g/C9IAAOSwv-xb0x1g/s-l225.webp" alt=""></td>
+                        <td>SONY PLASTATION 4</td>
+                        <td id="cancel" class="td-input"><input type="number" value="0"></td>
+                        <td class="price-row">$525.99</td>
+                        <td id="cancel" class="rmv-cross"><button class="rmv-btn btn btn-dark">&#10060</button></td>
+                    </tr>
+                                        <tr id="item-row" class="tbl-row">
+                        <td class="td-img"><img src="https://i.ebayimg.com/thumbs/images/g/nrIAAOSwCsRb0yJc/s-l225.webp" alt=""></td>
+                        <td>SMART HOME SPEAKER</td>
+                        <td class="td-input"><input type="number" value="0"></td>
+                        <td class="price-row">$95.99</td>
+                        <td id="cancel" class="rmv-cross"><button class="rmv-btn btn btn-dark">&#10060</button></td>
+                    </tr>
+                </table>
+                <button type="submit" class="back-to-shop-btn">← back to shopping</button>
+            </div>
+            <div class="side-bar-div">
+                <span>SUMMARY</span><br>
+                <tr>
+                    <td>NUMBER OF ITEMS</td>
+                    <td class="number-of-items"></td>
+                </tr><br>
+                <span>SHIPPING</span>
+                <p><small>DHL - International</small></p>
+                <span>PROMO CODE</span><br>
+                <input type="text"><br>
+                <tr>
+                    <td>TOTAL PRICE</td>
+                    <td class="td-total-price"></td>
+                </tr><br>
+                <button class="btn btn-dark btn-block check-out-btn">proceed to checkout</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
