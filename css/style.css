@@ -1,1 +1,93 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+  background: white;
+  color: #323232;
+
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+  font-family: Helvetica neue, roboto;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+section  div {
+    margin: 20px;
+}
+/*images*/
+.td-img {
+    max-width: 500px;
+    padding: 10px;
+}
+
+/*inputs*/
+.td-input input{
+    width: 50px;
+    border: none;
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+    margin: 12px;
+}
+/*divs*/
+.side-bar-div {
+    align-self: flex-start;
+    padding: 12px;
+}
+.tbl-div {
+    padding: 12px;
+}
+
+/*table headers*/
+.th-number {
+    
+}
+
+.tbl-header {
+    background-color: darkslategray;
+    color: white;
+}
+/*buttons*/
+.back-to-shop-btn {
+    display: block;
+    margin-top: 12px;
+    height: 35px;
+    color: brown;
+    background-color: rgb(215, 218, 224);
+    border: solid black;
+    border-radius: 20px;
+}
+.back-to-shop-btn:hover {
+    background-color: black;
+    color: white;
+    border-radius: none;
+    font-weight: bold;
+}
+.check-out-btn {
+    margin-top: 12px;
+}
+
+/*tr-col0-row0*/
+.tbl-row {
+    border-bottom: dotted rgb(160, 173, 209);
+}
+
+/*price-row*/
+.price-row {
+    padding: 15px;
+    font-weight: bold;
+}
+
+/*rmv-cross*/
+
+.rmv-cross {
+    padding: 15px;
+}
