@@ -4,7 +4,8 @@
     <meta charset="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <title>madlibs</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>E-Commerce</title>
 </head>
 <body>
     <main>
@@ -19,7 +20,7 @@
         <section class="container">
             <div class="tbl-div">
                 <table class="tbl">
-                    <tr class="tbl-header">
+                    <tr class="tbl-header" style="display:none">
                         <th>ITEM</th>
                         <th>DESCRIPTION</th>
                         <th class="th-number">[+/-]</th>
@@ -58,22 +59,31 @@
                 <button type="submit" class="back-to-shop-btn">← back to shopping</button>
             </div>
             <div class="side-bar-div">
-                <span>SUMMARY</span><br>
-                <tr>
-                    <td>NUMBER OF ITEMS</td>
-                    <td class="number-of-items"></td>
-                </tr><br>
-                <span>SHIPPING</span>
-                <p><small>DHL - International</small></p>
-                <span>PROMO CODE</span><br>
-                <input type="text"><br>
-                <tr>
-                    <td>TOTAL PRICE</td>
-                    <td class="td-total-price"></td>
-                </tr><br>
+                <span class="smr-span">SUMMARY</span><br>
+                <table style="margin-top: 24px;">
+                	<tr>
+                    		<td style="padding-right: 30px;">NUMBER OF ITEMS</td>
+                    		<td class="number-of-items">4</td>
+                	</tr>
+        	</table><br>
+                <label style="margin-top: 24px">SHIPPING</label>
+                <select><option>DHL - International</option>
+                	<option selected=selected>FEDEX Economy - International</option>
+                	<option>FIRST Class</option>
+        	</select>
+                <label style="margin-top: 24px">PROMO CODE</label><br>
+                <input type="text" placeholder="Enter your code here"><br>
+                <button class="btn btn-dark" type="submit" style="margin-top: 12px;">SUBMIT CODE</button><br>
+                <table class="price-cls" style="margin-top: 24px;">
+                	<tr>
+                    		<td style="padding-right: 30px;">TOTAL PRICE</td>
+                    		<td class="td-total-price">$1024</td>
+                	</tr>
+                </table><br>
                 <button class="btn btn-dark btn-block check-out-btn">proceed to checkout</button>
             </div>
         </section>
     </main>
+    <script src="../js/script.js"></script>
 </body>
 </html>

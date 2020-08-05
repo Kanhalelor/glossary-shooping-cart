@@ -17,7 +17,7 @@ body {
 }
 section {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 section  div {
     margin: 20px;
@@ -41,6 +41,7 @@ section  div {
 .side-bar-div {
     align-self: flex-start;
     padding: 12px;
+    line-height: 1.5;
 }
 .tbl-div {
     padding: 12px;
@@ -72,12 +73,16 @@ section  div {
     font-weight: bold;
 }
 .check-out-btn {
-    margin-top: 12px;
+    margin-top: 30px;
 }
 
 /*tr-col0-row0*/
 .tbl-row {
     border-bottom: dotted rgb(160, 173, 209);
+}
+
+.tbl-row:last-child {
+    border-bottom: none;
 }
 
 /*price-row*/
@@ -90,4 +95,24 @@ section  div {
 
 .rmv-cross {
     padding: 15px;
+}
+
+.smr-span {
+    color: black;
+    font-weight: 900;
+}
+
+/*.number-of-items*/
+
+.number-of-items {
+    padding-left: 16px;
+    background-color: black;
+    color: white;
+}
+
+/*td-total-price*/
+.td-total-price {
+    background-color: black;
+    color: white;
+    padding-left: 16px;
 }
