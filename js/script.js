@@ -1,19 +1,41 @@
+// select elements
+const numOfItems = document.querySelectorAll('input[type="number"]')
+const totalEl = document.getElementById('total-price')
+const itemPrice = document.querySelector('.price-cont')
 
-const cross = document.getElementById('cancel').addEventListener('click', removeItem);
+// 
 
-function removeItem(e) {
-    let item = document.getElementById("cancel");
-    item.parentNode.style.display="none";
+let totalPrice = 0;
+
+// functions
+function selectElments(e) {
+  let v = Number(e.target.value)
+  console.log(v)
+  let p = e.target.parentElement.parentElement.nextElementSibling.firstElementChild.innerHTML;
+  let currentItemPrice = Number(p.substring(1, p.length))
+  console.log(currentItemPrice)
+
+  updateTotalPrice(v, currentItemPrice);
 }
 
-let p = [];
-// get all prices for all items
-const items = document.getElementsByClassName('price-row');
-for (let i = 0; i < items.length; i++) {
-    p.push(items[i].textContent);
+// update total price
+
+function updateTotalPrice(num, price) {
+  let res = num * price;
+  const prices = {
+    "price": "${res}"
+  }
+  localStorage.setItem('prices', JSON.stringify(prices))
+  totalEl.innerText = res;
 }
 
+// events
+(function() {
+  numOfItems.forEach((item) => {
+    item.addEventListener('input', selectElments);
+  })
+})()
 
-const price = arr => p.map(Number);
-console.log(price);
-console.log(p)
+// debug
+
+// console.log(total.textContent)
