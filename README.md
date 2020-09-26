@@ -1,3 +1,1 @@
-# glossary-shooping-cart
-
-**A work in progress...**
+# glossary-shooping-cart with HTML CSSS AND JavaScript
