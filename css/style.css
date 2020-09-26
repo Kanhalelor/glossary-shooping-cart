@@ -86,9 +86,16 @@ body {
 }
 .select-cont span {
   margin-left: 5rem;
-  font-size: 18px;
+  font-size: 20px;
 }
-
+.add-item:hover, .remove:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #8547A1;
+}
+#item-price {
+  font-size: 16px;
+}
 footer {
   margin-top: auto;
   height: 70px;
@@ -105,7 +112,7 @@ footer {
   margin-top: 1rem;
   border-top: 2px solid orchid;
   font-weight: 800;
-  
+
   font-size: 16px;
   padding: 1rem;
 }
